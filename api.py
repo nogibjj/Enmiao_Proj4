@@ -6,6 +6,7 @@ app = FastAPI()
 
 predict = SentimentIntensityAnalyzer()
 
+#need input
 @app.get("/")
 def fetch_predictions(text: str):
     result = predict.polarity_scores(text)
