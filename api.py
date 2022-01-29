@@ -10,7 +10,7 @@ predict = SentimentIntensityAnalyzer()
 
 @app.get("/")
 def hello():
-    return "query format: 0.0.0.0:8000/predict?text="
+    return "query format: https://fastapi-5gzezq4jcq-uc.a.run.app/predict?text="
 
 @app.get("/predict")
 def fetch_predictions(text: str):
